@@ -1,0 +1,83 @@
+.container-fluid {
+  height: 100vh;
+  background: linear-gradient(to right, #ee2200, #f49b06);
+}
+
+.login-container {
+  width: 70%;
+  height: 80vh;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.login-container img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 50%;
+  padding: 0 50px;
+}
+.login-container form h1 {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+.login-container span {
+  font-weight: 800;
+  color: #f12711;
+}
+.login-container .input-data {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.login-container .input-data input {
+  height: 100%;
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid darkgray;
+}
+.login-container .input-data input:focus ~ label, .login-container .input-data input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 13px;
+}
+.login-container .input-data label {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 600;
+  bottom: 10px;
+  left: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.login-container button[name=submit] {
+  background-color: #f12711;
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+.login-container button[name=submit]::before {
+  content: "ACCEDER";
+}
+.login-container button[name=submit]:hover::before {
+  content: "ACCEDIENDO";
+}
+.login-container button[name=submit]:hover {
+  background-color: #80001d;
+}/*# sourceMappingURL=login.component.css.map */
